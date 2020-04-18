@@ -57,6 +57,17 @@ const Menu = ({ history }) => {
             </Link>
           </li>
         )}
+        {isAuthenticated() && (
+          <li className="nav-item">
+            <Link
+              className="nav-link font-weight-bold"
+              style={isActive(history, '/user/dicussion')}
+              to="/user/dicussion/"
+            >
+              Discussion
+            </Link>
+          </li>
+        )}
         {isAuthenticated() && isAuthenticated().user.role === 1 && (
           <li className="nav-item">
             <Link

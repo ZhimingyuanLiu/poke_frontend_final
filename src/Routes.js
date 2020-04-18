@@ -5,6 +5,7 @@ import Signin from './user/Signin';
 import UserBoard from './user/UserBoard';
 import Profile from './user/Profile';
 import userOrder from './user/userOrder';
+import dicussion from './user/Discussion';
 
 import AdminBoard from './user/AdminBoard';
 import Home from './main/Home';
@@ -33,6 +34,7 @@ const Routes = () => {
           exact
           component={userOrder}
         />
+        <PrivateRoutes path="/user/dicussion/" exact component={dicussion} />
         <AdminRoutes path="/admin/dashboard" exact component={AdminBoard} />
         <AdminRoutes path="/create/category" exact component={AddCategory} />
         <AdminRoutes path="/create/product" exact component={AddProduct} />
