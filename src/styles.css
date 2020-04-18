@@ -136,12 +136,12 @@ button {
   border-radius: 5px;
 }
 
-.cardDiscuss {
+/* .cardDiscuss {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 30px;
   min-height: 30rem;
-}
+} */
 
 .render-chat {
   max-width: 70%;
